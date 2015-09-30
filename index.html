@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 layout: default
 title: 我的博客
@@ -6,7 +5,7 @@ title: 我的博客
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">全部</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -15,6 +14,7 @@ title: 我的博客
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <span class="text-number">字数：{{ post.content | number_of_words }}</span>
         </h2>
       </li>
     {% endfor %}
@@ -23,6 +23,3 @@ title: 我的博客
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
-=======
-Hello World
->>>>>>> 590a37d74eafb1768e15ed414538337354054785

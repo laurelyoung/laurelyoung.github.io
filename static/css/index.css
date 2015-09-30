@@ -1,0 +1,63 @@
+body {
+    font-family: Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+
+.tag {
+    padding: 3px 8px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.text-number {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.site-header {
+    background: #222;
+    border-top: none;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.site-title,
+.site-title:visited {
+    color: #ddd;
+}
+
+.site-nav .page-link {
+    color: #ddd;
+}
+
+.page-content .wrapper {
+    min-height: 600px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+
+.page-content .wrapper {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.site-footer {
+	padding: 15px 0 0;
+    background-color: rgba(0,0,0,.8);
+    border: none;
+}
+
+.site-footer a {
+	color: #2a7ae2;
+}
+
+.page-content h1 {
+    font-size: 32px;
+}
+
+.page-content h2 {
+    font-size: 28px;
+}
+
