@@ -1,5 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+
+ul, li {
+    list-style: none;
 }
 
 .tag {
@@ -34,12 +46,13 @@ body {
 
 .page-content .wrapper {
     min-height: 600px;
-    background-color: #f1f1f1;
+    background-color: #efefef;
     border-radius: 4px;
+    position: relative;
 }
 
 .page-content .wrapper {
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -60,4 +73,83 @@ body {
 .page-content h2 {
     font-size: 28px;
 }
+
+.page-content .wrapper .home {
+    display: block;
+    width: 660px;
+}
+
+
+
+/*侧边分类栏*/
+.cat-nav {
+    position: absolute;
+    top: 30px;
+    right: -2px;
+    display: block;
+    width: 220px;
+    min-height: 200px;
+    border-left: 3px solid #fff;
+}
+
+ul.cat-nav > li {
+    display: block;
+    width: 100%;
+    padding: 8px 15px;
+    cursor: pointer;
+    position: relative;
+    border-left: 3px solid #fff;
+    margin-left: -3px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+ul.cat-nav > li:hover, ul.cat-nav > li.active {
+    background-color: #fff;
+    border-left: 3px solid #2a7ae2;
+    margin-left: -3px;
+}
+
+ul.cat-nav > li .cat-number {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    padding: 1px 8px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+    vertical-align: middle;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+ul.cat-nav > li:hover .cat-number {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
