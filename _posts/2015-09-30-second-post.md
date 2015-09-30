@@ -2,6 +2,7 @@
 layout: post
 title: 第二篇文章--撰写博客
 tags: [demo,blog]
+categories: [github, blog]
 ---
 
 ## 1. 创建文章的文件

@@ -2,7 +2,7 @@
 title: Blog of Chenglong Yang
 email: ycl83761360@163.com
 description: 不积跬步无以至千里，不积小流无以成江河
-baseurl: "/myblog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yangchenglong.github.io" # the base hostname & protocol for your site
 twitter_username: none
 github_username:  yangchenglong
