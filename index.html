@@ -4,44 +4,92 @@ title: 我的博客
 ---
 
 <div class="home">
+  <div class="inner">
+    <h1 class="page-heading">全部</h1>
 
-  <h1 class="page-heading">全部</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <span class="text-number">字数：{{ post.content | number_of_words }}</span>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  {% for category in site.categories %}
-    {{ category | first }}
-    <span>({{ category | last | size }})</span>
-      {% for post in category.last %}
-        <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+            <h2>{{ post.title }}</h2>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post-text-count">字数：{{ post.content | number_of_words }}</span>
+          </a>
+        </li>
       {% endfor %}
-      <hr>
-  {% endfor %}
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- {% for category in site.categories %}
+      {{ category | first }}
+      <span>({{ category | last | size }})</span>
+        {% for post in category.last %}
+          <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        <hr>
+    {% endfor %} -->
 
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+  </div>
+
+  <script type="text/javascript">
+    var dataStr = '{ {% for cat in site.categories %}'
+      + '{% if cat[0] != site.categories.first[0] %},{% endif %}'
+      + '"{{ cat[0] }}":'
+      + '[{% for post in cat[1] %}'
+      + '  {% if post != cat[1].first %},{% endif %}'
+      + '  {"url":"{{post.url}}", "title":"{{post.title}}", "date":"{{post.date | date:"%d/%m/%Y"}}", "count":"{{ post.content | number_of_words }}"}'
+      + '{% endfor %}]'
+      + '{% endfor %} }';
+    var data = JSON.parse(dataStr);
+    console.log(data);
+    // var curTag = $.query.get("cat");
+    // var archieves = data[curTag];
+    window.onload = function() {
+      var post_list = document.getElementsByClassName('post-list')[0];
+      var cat_nav = document.getElementsByClassName('cat-nav')[0];
+      var categories = cat_nav.getElementsByTagName('li');
+      for (var i = categories.length - 1; i >= 0; i--) {
+        categories[i].onclick = function(e) {
+          e = e || window.event;
+          var el = e.srcElement || e.target;
+          if (el.children.length > 0 && el.children[0].className == 'cat-name') {
+           console.log(el.children[0].innerHTML);
+           var key = el.children[0].innerHTML;
+           var value = data[key];
+           console.log(value);
+           var html = '';
+           for (var i = value.length - 1; i >= 0; i--) {
+             html += '<li>'
+                     +'<a class="post-link" href="' + value[i].url + '">'
+                     +'  <h2>' + value[i].title + '</h2>'
+                     +'  <span class="post-meta">' + value[i].date + '</span>'
+                     +'  <span class="post-text-count">字数：' + value[i].count + '</span>'
+                     +'</a>'
+                     +'</li>';
+            };
+            console.log(html);
+            post_list.innerHTML = html;
+          };
+        }
+      }
+    };
+  </script>
 </div>
 
 
-<ul class="cat-nav">
-  {% for category in site.categories %}
-    <li>
-      <span class="cat-name">{{ category | first }}</span>
-      <span class="cat-number">{{ category | last | size }}</span>
-    </li>
-  {% endfor %}
-</ul>
+<div class="cat-nav">
+  <div class="inner">
+    <h2 class="cat-header">分类</h2>
+    <ul>
+    {% for category in site.categories %}
+      <li>
+        <span class="cat-name">{{ category | first }}</span>
+        <span class="cat-number">{{ category | last | size }}</span>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
 
 
 

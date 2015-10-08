@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
@@ -7,11 +7,22 @@
 }
 
 body {
-    font-family: Helvetica, Arial, "Microsoft Yahei", sans-serif;
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    background: url("/static/images/bg.jpg");
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
+    margin: 0;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+    color: #005;
+    text-decoration: none;
 }
 
 .tag {
@@ -23,9 +34,10 @@ ul, li {
     margin-right: 2px;
 }
 
-.text-number {
+.post-text-count {
     font-size: 14px;
-    color: #aaa;
+    color: #828282;
+    margin-left: 10px;
 }
 
 .site-header {
@@ -46,80 +58,113 @@ ul, li {
 
 .page-content .wrapper {
     min-height: 600px;
-    background-color: #efefef;
-    border-radius: 4px;
     position: relative;
 }
 
-.page-content .wrapper {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
 
-.site-footer {
-	padding: 15px 0 0;
-    background-color: rgba(0,0,0,.8);
-    border: none;
-}
-
-.site-footer a {
-	color: #2a7ae2;
-}
+/*正文*/
 
 .page-content h1 {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 .page-content h2 {
-    font-size: 28px;
+    font-size: 20px;
+    margin-bottom: -3px;
+}
+
+.page-content .post-link {
+    font-size: 20px;
 }
 
 .page-content .wrapper .home {
     display: block;
-    width: 660px;
+    width: 75%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+.page-content .wrapper .home .inner .page-heading,
+.page-content .wrapper .home .inner .post-list li {
+    padding: 10px 30px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0;
+    transition: all 0.3s;
+}
+
+.page-content .wrapper .home .inner .post-list li:last-child {
+    border: 0;
+}
+
+.page-content .wrapper .home .inner .post-list li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.page-content .wrapper .post {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
 /*侧边分类栏*/
+
 .cat-nav {
     position: absolute;
-    top: 30px;
-    right: -2px;
+    top: 0;
+    right: 0;
     display: block;
-    width: 220px;
-    min-height: 200px;
-    border-left: 3px solid #fff;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-ul.cat-nav > li {
+.home .inner,
+.cat-nav .inner {
+    background-color: #f8f8fd;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, .3), 0 0 25px rgba(0, 0, 0, .1) inset;
+}
+
+.cat-nav .inner h2,
+.cat-nav li {
+    position: relative;
     display: block;
     width: 100%;
     padding: 8px 15px;
     cursor: pointer;
-    position: relative;
-    border-left: 3px solid #fff;
-    margin-left: -3px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 
-ul.cat-nav > li:hover, ul.cat-nav > li.active {
-    background-color: #fff;
-    border-left: 3px solid #2a7ae2;
-    margin-left: -3px;
+.cat-nav .inner h2 {
+    font-size: 18px;
+    font-weight: bold;
 }
 
-ul.cat-nav > li .cat-number {
+.cat-nav li:last-child {
+    border: 0;
+}
+
+.cat-nav li:hover,
+.cat-nav li.active {
+    color: #669;
+    background-color: #f1f1f1;
+}
+
+.cat-nav li .cat-number {
     position: absolute;
-    top: 6px;
-    right: 20px;
+    top: 8px;
+    right: 15px;
+    font-size: 13px;
     padding: 1px 8px;
     border-radius: 10px;
     text-align: center;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     vertical-align: middle;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -130,26 +175,45 @@ ul.cat-nav > li .cat-number {
     transition: all 0.3s;
 }
 
-ul.cat-nav > li:hover .cat-number {
+.cat-nav li:hover .cat-number {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
+.wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
 
 
+/*顶部*/
+
+.site-header .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
+/*底部*/
 
+.site-footer {
+    padding: 15px 0 0;
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+}
 
+.site-footer a {
+    /*color: #2a7ae2;*/
+    color: #0ae;
+}
 
+.site-footer .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-
-
-
-
-
-
-
-
+.site-footer .footer-col-3 .text {
+    text-align: right;
+}
