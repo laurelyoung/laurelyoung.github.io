@@ -11,10 +11,34 @@ body {
     background: url("/static/images/bg.jpg");
 }
 
+h1{
+    margin-top: 20px;
+}
+
 ul,
 li {
     list-style: none;
     margin: 0;
+}
+
+code {
+    color: #c7254e;
+    background-color: #F9F2F4;
+    font-family: consolas, Arial;
+}
+
+pre > code {
+    color: #444;
+    background-color: #eef;
+}
+
+blockquote {
+    border-left-width: 10px;
+    background-color: rgba(102,128,153,0.05);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px 20px;
+    border-left: 5px solid rgba(102,128,153,0.075);
 }
 
 a,
