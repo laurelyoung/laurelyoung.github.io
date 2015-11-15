@@ -36,11 +36,12 @@ pre > code {
 blockquote {
     color: #2c3f51;
     font-size: 16px;
-    background-color: rgba(102,128,153,0.05);
+    background-color: #f2f4f6;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 15px 20px;
     border-left: 10px solid rgba(102,128,153,0.075);
+    font-style: normal;
 }
 
 a,
