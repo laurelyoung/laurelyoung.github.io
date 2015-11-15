@@ -79,17 +79,25 @@ Nexus的仓库主要分类如下：
 
 #### 1）设置允许下载远程仓库索引
 
+点击选中一个代理仓库，然后点击`Configuration`，将`Download Remote Indexes`选项设置为`True`。
+
 <div style="text-align: center;">
 	<image src="{{ post.url }}/static/images/nexus/download_remote_repo_index.jpg" width="55%"></image>
 </div>
 
 #### 2）下载索引，并检查是否下载成功
 
+点击查看`Browse Index`Tab页。如果加载出来索引，则表示远程仓库的索引下载成功，否则表示下载失败。
+
 <div style="text-align: center;">
 	<image src="{{ post.url }}/static/images/nexus/check_nexus_index_success.jpg" width="55%"></image>
 </div>
 
-#### 3）模糊搜索构件
+#### 3）搜索构件
+
+搜索构件的方式主要有两种：
+一种是名称`模糊搜索`，即根据关键词模糊匹配；
+另一种是`GAV搜索`，即已知构件的`GroupId+ArtifactId+Version`对构件进行精确搜索。
 
 <div style="text-align: center;">
 	<image src="{{ post.url }}/static/images/nexus/search_component.jpg" width="55%"></image>
