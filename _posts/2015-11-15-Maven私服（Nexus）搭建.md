@@ -2,7 +2,7 @@
 layout: post
 title: Maven私服（Nexus）搭建
 tags: [maven, nexus, repository]
-categories: [github, blog]
+categories: [maven, nexus, repository]
 ---
 
 
