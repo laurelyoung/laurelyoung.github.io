@@ -26,7 +26,6 @@ categories: [github, blog]
 ## 3. 使用Liquid模板语言创建文章列表
 
 代码如下：
-
     {% highlight html linenos %}
     <ul>
 	    {% for post in site.posts %}
@@ -38,4 +37,4 @@ categories: [github, blog]
     {% endhighlight %}
 
 
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返回</a>
+<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>

@@ -249,8 +249,9 @@ a:visited {
 .btn-back {
     display: block;
     width: 100px;
-    line-height: 30px;
+    line-height: 34px;
     text-align: center;
     border-radius: 4px;
     background-color: #fff;
+    margin: 40px auto 0;
 }
