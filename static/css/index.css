@@ -245,3 +245,12 @@ a:visited {
 .site-footer .footer-col-3 .text {
     text-align: right;
 }
+
+.btn-back {
+    display: block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #fff;
+}

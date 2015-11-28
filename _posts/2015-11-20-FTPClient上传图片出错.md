@@ -59,6 +59,6 @@ FTP客户端与FTP服务器建立的连接可能由于`网络异常或者连接�
     }
 
 
-<p>Click the link below to go back to index.</p>
 
-<a href="{{ site.baseurl }}/index.html">Go back</a>
+
+<a href="{{ site.baseurl }}/index.html" class="btn-back">返回</a>

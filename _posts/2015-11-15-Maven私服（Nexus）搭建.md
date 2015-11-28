@@ -2,7 +2,7 @@
 layout: post
 title: Maven私服（Nexus）搭建
 tags: [maven, nexus, repository]
-categories: [maven, nexus, repository]
+categories: [maven, nexus]
 ---
 
 
@@ -155,3 +155,6 @@ Nexus的仓库主要分类如下：
 <div style="text-align: center;">
 	<image src="{{ post.url }}/static/images/nexus/deploy_component_to_nexus_2.jpg" width="55%"></image>
 </div>
+
+
+<a href="{{ site.baseurl }}/index.html" class="btn-back">返回</a>

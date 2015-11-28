@@ -1,9 +1,11 @@
 ---
 layout: post
-title: 第二篇文章--撰写博客
-tags: [demo,blog]
+title: 使用jekyll撰写GitHub博客
+tags: [github, blog]
 categories: [github, blog]
 ---
+
+
 
 ## 1. 创建文章的文件
 
@@ -34,3 +36,6 @@ categories: [github, blog]
 	    {% endfor %}
     </ul>
     {% endhighlight %}
+
+
+<a href="{{ site.baseurl }}/index.html" class="btn-back">返回</a>
