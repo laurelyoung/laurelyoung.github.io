@@ -25,7 +25,7 @@ categories: [maven, nexus]
     <image src="{{ post.url }}/static/images/nexus/indexer-cli-5.1.1.jpg" width="55%"></image>
 </div>
 
-运行命令`java -jar indexer-cli-5.1.1.jar -u nexus-maven-repository-index.gz -d indexer`，这个过程大概需要十几分钟。执行完成后，将得到一个`indexer文件夹`，这个文件夹内存放的是所有的索引文件，我们需要将它们全部拷贝到私服`{nexus-home}/sonatype-work/nexus/indexer/central-ctx`目录下（注意：先删除改目录下的东西）
+运行命令`java -jar indexer-cli-5.1.1.jar -u nexus-maven-repository-index.gz -d indexer`，这个过程大概需要十几分钟。执行完成后，将得到一个`indexer文件夹`，这个文件夹内存放的是所有的索引文件，我们需要将它们全部拷贝到Nexus私服的`{nexus-home}/sonatype-work/nexus/indexer/central-ctx`目录下（注意：先删除该目录下的东西）
 
 
 # 3、重启Nexus
