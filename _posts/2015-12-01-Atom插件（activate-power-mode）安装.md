@@ -14,13 +14,10 @@ categories: [Atom, activate-power-mode]
 
 # 2、插件安装步骤
 
-第一步，cd ~/.atom/packages
-
-第二步，git clone https://github.com/JoelBesada/activate-power-mode.git
-
-第三步，cd activate-power-mode
-
-第四步，apm install
+第一步，cd ~/.atom/packages  
+第二步，git clone https://github.com/JoelBesada/activate-power-mode.git  
+第三步，cd activate-power-mode  
+第四步，apm install  
 
 
 Mac上操作截图如下：
