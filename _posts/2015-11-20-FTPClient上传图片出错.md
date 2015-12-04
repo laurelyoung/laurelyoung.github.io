@@ -20,7 +20,7 @@ FTP客户端与FTP服务器建立的连接可能由于`网络异常或者连接�
     	    ftpClient = new FTPClient();
     	    ftpClient.connect(ip, port);
     	    ... 此处省略若干代码
-        }catch(Exception ex) {
+        } catch(Exception ex) {
 		    logger.error("ftp connect failed, ip = " + ip + ", port = " + port + ", path = " + path + ", user = " + user + ", password = " + password, ex);
 		    return false;
 	    }
@@ -41,7 +41,7 @@ FTP客户端与FTP服务器建立的连接可能由于`网络异常或者连接�
 根据以上分析，可以得到一个解决方案，即`根据返回码_replayCode判断是否进行FTP重连`，代码如下：
 
     public synchronized boolean initialize(String ip, int port, String path, String user, String password) throws Exception {
-    	// 通过判断原来的client是否为null来判断是否重连
+    	// 通过判断原来的client是否为null以及返回码是否为成功值来判断是否重连
 	    if(null != client && FTPReply.isPositiveCompletion(client.getReplyCode())) {
     	    return true;
         }
@@ -50,7 +50,7 @@ FTP客户端与FTP服务器建立的连接可能由于`网络异常或者连接�
     	    ftpClient = new FTPClient();
     	    ftpClient.connect(ip, port);
     	    ... 此处省略若干代码
-        }catch(Exception ex) {
+        } catch(Exception ex) {
 		    logger.error("ftp connect failed, ip = " + ip + ", port = " + port + ", path = " + path + ", user = " + user + ", password = " + password, ex);
 		    return false;
 	    }
