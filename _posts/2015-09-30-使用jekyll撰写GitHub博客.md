@@ -16,11 +16,11 @@ categories: [github, blog]
 	
 ## 2. 引用图片和其他资源
 
-	* 在文章中引用一张图片
-		[图片标题]({{ post.url }}/assets/one.jpg)
+	在文章中引用一张图片
+	图片标题]({{ post.url }}/assets/one.jpg)
 
-	* 在文章插入一条链接
-		[link](http://www.baidu.com)
+	在文章插入一条链接
+	[link](http://www.baidu.com)
 
 
 ## 3. 使用Liquid模板语言创建文章列表
