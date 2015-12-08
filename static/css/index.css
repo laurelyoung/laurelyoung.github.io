@@ -304,8 +304,8 @@ a:visited {
     line-height: 34px;
     text-align: center;
     border-radius: 4px;
-    background-color: #f1f1f1;
     margin: 40px auto 0;
+    background-color: #f1f1f1;
 }
 
 .pre-next-links{
@@ -313,27 +313,27 @@ a:visited {
 }
 
 .pagination {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ddd;
     text-align: center;
-    padding-bottom: 10px;
+    padding: 20px 0;
     font-size: 18px;
 }
 
 .pagination > span, .pagination > a, .pagination > em {
-    margin: 0 3px;
-    color: #005;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 2px 10px;
     cursor: pointer;
-    opacity: 1;
+    margin: 0 3px;
+    color: #005;
 }
 
 .pagination > span {
-    opacity: 0.5;
+    color: #999;
 }
 
 .pagination > em {
+    font-weight: bold;
     color: #d41;
 }
 
