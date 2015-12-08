@@ -314,6 +314,12 @@ a:visited {
 
 .pagination {
     text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.pagination > a, .pagination > em {
+    margin: 0 3px;
 }
 
 
