@@ -26,15 +26,16 @@ categories: [github, blog]
 ## 3. 使用Liquid模板语言创建文章列表
 
 代码如下：
-    {% highlight html linenos %}
-    <ul>
-	    {% for post in site.posts %}
-	    <li>
-  		    <a href="{{ post.url }}">{{ post.title }}</a>
-	    </li>
-	    {% endfor %}
-    </ul>
-    {% endhighlight %}
+
+``` html
+<ul>
+{% for post in site.posts %}
+	<li>
+		<a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+{% endfor %}
+</ul>
+```
 
 
 <a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>

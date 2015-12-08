@@ -8,4 +8,10 @@ url: "http://yangchenglong.github.io" # the base hostname & protocol for your si
 github_username:  yangchenglong
 encoding: utf-8
 # Build settings
-markdown: kramdown
+# markdown: kramdown
+markdown: redcarpet
+extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+highlighter: pygments
+
+paginate: 5

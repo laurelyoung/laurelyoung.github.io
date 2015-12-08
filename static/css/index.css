@@ -8,7 +8,7 @@
 
 body {
     font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
-    background: url("/static/images/bg.jpg");
+    /*background: url("/static/images/bg.jpg");*/
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -32,7 +32,7 @@ ul, li{
 }
 
 p{
-    line-height: 1.8em;
+    line-height: 1.7em;
     -ms-word-break: break-all;
     word-break: break-all;
 }
@@ -49,16 +49,17 @@ code {
     font-family: Menlo, "Microsoft Yahei", Consolas, Arial;
     padding: 3px 5px;
     margin: 0 2px;
-    border: 1px solid rgba(0,0,0,0.3);
+    /*border: 1px solid rgba(0,0,0,0.3);*/
 }
 
 pre > code {
     font-size: 14px;
     color: #444;
-    background-color: #eef;
+    background-color: inherit;
 }
 
 pre{
+    background-color: #f5f5f5;
     border: 1px solid #eef;
     margin: 10px 0;
 }
@@ -82,8 +83,8 @@ blockquote ul{
 
 blockquote li {
     list-style-type: disc;;
+    line-height: 1.75em;
     margin-left: 10px;
-    line-height: 2em;
     padding-left: 5px;
     margin: 0;
 }
@@ -100,11 +101,11 @@ a:visited {
 }
 
 .tag {
-    padding: 3px 8px;
     color: #fff;
+    font-size: 13px;
+    padding: 3px 8px;
     border-radius: 3px;
     background-color: rgba(0, 0, 0, .7);
-    cursor: pointer;
     margin-right: 2px;
 }
 
@@ -135,11 +136,14 @@ a:visited {
     position: relative;
 }
 
-
+.post-title{
+    font-size: 26px !important;
+    letter-spacing: 0.3px;
+}
 /*正文*/
 
 .page-content h1 {
-    font-size: 26px;
+    font-size: 23px;
     font-weight: 700;
 }
 
@@ -281,7 +285,7 @@ a:visited {
 
 .site-footer a {
     /*color: #2a7ae2;*/
-    color: #0ae;
+    color: #ddd !important;
 }
 
 .site-footer .wrapper {
@@ -291,6 +295,7 @@ a:visited {
 
 .site-footer .footer-col-3 .text {
     text-align: right;
+    color: #ddd !important;
 }
 
 .btn-back {
@@ -299,6 +304,16 @@ a:visited {
     line-height: 34px;
     text-align: center;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #f1f1f1;
     margin: 40px auto 0;
 }
+
+.pre-next-links{
+    margin-top: 30px;
+}
+
+.pagination {
+    text-align: center;
+}
+
+
