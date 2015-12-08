@@ -313,13 +313,27 @@ a:visited {
 }
 
 .pagination {
+    border-top: 1px solid #ccc;
     text-align: center;
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.pagination > a, .pagination > em {
+.pagination > span, .pagination > a, .pagination > em {
     margin: 0 3px;
+    color: #005;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 10px;
+    cursor: pointer;
+    opacity: 1;
 }
 
+.pagination > span {
+    opacity: 0.5;
+}
+
+.pagination > em {
+    color: #d41;
+}
 
