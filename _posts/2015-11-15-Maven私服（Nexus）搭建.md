@@ -124,31 +124,35 @@ Nexus的仓库主要分类如下：
 
 #### 1）pom.xml
 
-    <distributionManagement> 
-	    <repository> 
-		    <id>my-nexus-releases</id>  
-		    <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url> 
-	    </repository>  
-	    <snapshotRepository> 
-		    <id>my-nexus-snapshot</id>  
-		    <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url> 
-	    </snapshotRepository> 
-    </distributionManagement>
+``` xml
+<distributionManagement> 
+    <repository> 
+	    <id>my-nexus-releases</id>  
+	    <url>http://127.0.0.1:8081/nexus/content/repositories/releases/</url> 
+    </repository>  
+    <snapshotRepository> 
+	    <id>my-nexus-snapshot</id>  
+	    <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots/</url> 
+    </snapshotRepository> 
+</distributionManagement>
+```
 
 #### 2）settings.xml
 
-    <servers>    
-	    <server>    
-		    <id>my-nexus-releases</id>    
-		    <username>admin</username>    
-		    <password>admin123</password>    
-	    </server>    
-	    <server>    
-		    <id>my-nexus-snapshot</id>    
-		    <username>admin</username>    
-		    <password>admin123</password>    
-	    </server>    
-    </servers>
+``` xml
+<servers>    
+    <server>    
+	    <id>my-nexus-releases</id>    
+	    <username>admin</username>    
+	    <password>admin123</password>    
+    </server>    
+    <server>    
+	    <id>my-nexus-snapshot</id>    
+	    <username>admin</username>    
+	    <password>admin123</password>    
+    </server>    
+</servers>
+```
 
 执行`mvn deploy`后，打开仓库地址，可以看到刚刚部署的构件已经上传到Nexus的私服仓库中。
 
