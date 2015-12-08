@@ -30,8 +30,6 @@ categories: [Tomcat, IntelliJ IDEA]
 [http://my.oschina.net/oymyisme/blog/129109](http://my.oschina.net/oymyisme/blog/129109)
 
 
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>
-
 
 
 

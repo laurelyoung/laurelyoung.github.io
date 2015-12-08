@@ -40,5 +40,3 @@ categories: [maven, nexus]
 
 1、[http://m.blog.csdn.net/blog/kmter/23564681](http://m.blog.csdn.net/blog/kmter/23564681)
 
-
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>

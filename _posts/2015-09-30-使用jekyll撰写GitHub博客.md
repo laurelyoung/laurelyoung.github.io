@@ -36,6 +36,3 @@ categories: [github, blog]
 {% endfor %}
 </ul>
 ```
-
-
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>
