@@ -167,5 +167,3 @@ Nexus的仓库主要分类如下：
 #参考资料
 [http://aijezdm915.iteye.com/blog/1335025](http://aijezdm915.iteye.com/blog/1335025)  
 [http://www.oschina.net/question/698806_159372](http://www.oschina.net/question/698806_159372)
-
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>

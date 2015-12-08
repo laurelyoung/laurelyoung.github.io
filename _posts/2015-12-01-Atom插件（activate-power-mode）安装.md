@@ -28,5 +28,3 @@ Mac上操作截图如下：
 
 
 类似的，其他Atom插件可参照以上四步进行安装，只需要将第二步中的`github地址`和第三步的`插件名称`换成对应的即可。
-
-<a href="{{ site.baseurl }}/index.html" class="btn-back">返 回</a>
