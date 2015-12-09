@@ -18,7 +18,7 @@ ul, ol, dl, figure{
 }
 
 h1{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -299,6 +299,14 @@ a:hover {
 .site-footer .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.site-footer .footer-col{
+    width: 33.3%;
+}
+
+.site-footer .footer-col-2 {
+    text-align: center;
 }
 
 .site-footer .footer-col-3 .text {

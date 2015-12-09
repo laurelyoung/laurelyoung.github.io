@@ -110,14 +110,15 @@ Nexus的仓库主要分类如下：
 #6、配置maven使用nexus
 只需要修改1个文件：`settings.xml`
 
-    <mirrors>    
-	    <mirror>       
-		    <id>nexus</id>        
-		    <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>       
-		    <mirrorOf>*</mirrorOf>       
-	    </mirror>    
-    </mirrors>    
-
+``` xml
+<mirrors>    
+    <mirror> 
+	    <id>nexus</id>  
+	    <url>http://127.0.0.1:8081/nexus/content/groups/public/</url>
+	    <mirrorOf>*</mirrorOf>
+    </mirror>
+</mirrors>
+```
 
 #7、部署构件到nexus私服仓库中
 需要修改2个文件：`pom.xml`和`settings.xml`

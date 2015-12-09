@@ -17,8 +17,8 @@ categories: [Tomcat, IntelliJ IDEA]
 
 操作截图如下：
 
-<div style="text-align: center;margin-bottom: 20px;">
-	<image src="{{ post.url }}/static/images/intellij/garbled_chinese.png" style="width:65% !important;"></image>
+<div style="text-align: center;">
+	<image src="{{ post.url }}/static/images/intellij/garbled_chinese.png"></image>
 </div>
 
 

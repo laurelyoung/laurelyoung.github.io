@@ -7,7 +7,7 @@ categories: [FTPClient]
 
 
 
-#原因分析
+# 1、原因分析
 FTP客户端与FTP服务器建立的连接可能由于`网络异常或者连接超时`等原因造成`断开`，首先想到的方式便是`重新建立FTP连接`，判断是否重连的关键代码如下：
 
 ``` java
@@ -40,7 +40,7 @@ public synchronized boolean initialize(String ip, int port, String path, String 
     
 
 
-#解决代码
+# 2、解决方法
 根据以上分析，可以得到一个解决方案，即`根据返回码_replayCode判断是否进行FTP重连`，代码如下：
 
 ``` java
