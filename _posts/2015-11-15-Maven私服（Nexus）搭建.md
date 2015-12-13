@@ -166,5 +166,5 @@ Nexus的仓库主要分类如下：
 
 
 #参考资料
-[http://aijezdm915.iteye.com/blog/1335025](http://aijezdm915.iteye.com/blog/1335025)  
-[http://www.oschina.net/question/698806_159372](http://www.oschina.net/question/698806_159372)
+* [maven Nexus入门指南（图文）](http://aijezdm915.iteye.com/blog/1335025)  
+* [Maven 系列 五 ：使用Nexus搭建Maven私服](http://www.oschina.net/question/698806_159372)

@@ -36,7 +36,6 @@ code {
     font-family: Monaco, Menlo, "Microsoft Yahei", Consolas, Arial;
     padding: 3px 5px;
     margin: 0 2px;
-    /*border: 1px solid rgba(0,0,0,0.3);*/
 }
 
 pre > code {
@@ -119,8 +118,9 @@ a:hover {
 }
 
 .page-content .wrapper {
-    min-height: 600px;
     position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px; 
 }
 
 .post-header .post-title{
@@ -133,7 +133,7 @@ a:hover {
 /*正文*/
 
 .page-content {
-    padding-bottom: 10px;
+    padding-bottom: 0;
 }
 
 .page-content .post-content h1 {
@@ -289,6 +289,10 @@ a:hover {
     width: 920px;
 }
 
+.post-content {
+    margin-bottom: 5px;
+}
+
 .post-content ul {
     list-style: none;
 }
@@ -344,8 +348,7 @@ a:hover {
 }
 
 .site-footer .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 .site-footer .wrapper .footer-col-wrapper {
@@ -378,6 +381,7 @@ a:hover {
 
 .pre-next-links{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .pre-next-links ul li{
