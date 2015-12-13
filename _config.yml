@@ -14,4 +14,4 @@ extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "w
 
 highlighter: pygments
 
-paginate: 5
+paginate: 8

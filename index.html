@@ -35,9 +35,9 @@ title: yangchenglong's blog
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
       {% else %}
-        <span>&laquo; Prev</span>
+        <span>上一页</span>
       {% endif %}
 
       {% for page in (1..paginator.total_pages) %}
@@ -51,12 +51,14 @@ title: yangchenglong's blog
       {% endfor %}
 
       {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
       {% else %}
-        <span>Next &raquo;</span>
+        <span>下一页</span>
       {% endif %}
     </div>
     {% endif %}
+</div>
+
 
   <script type="text/javascript">
     var dataStr = '{ {% for cat in site.categories %}'
@@ -102,6 +104,7 @@ title: yangchenglong's blog
     };
   </script>
 </div>
+
 
 
 <div class="cat-nav">
