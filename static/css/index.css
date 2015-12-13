@@ -33,7 +33,7 @@ code {
     font-size: 14px;
     color: #c7254e;
     background-color: #F9F2F4;
-    font-family: Menlo, "Microsoft Yahei", Consolas, Arial;
+    font-family: Monaco, Menlo, "Microsoft Yahei", Consolas, Arial;
     padding: 3px 5px;
     margin: 0 2px;
     /*border: 1px solid rgba(0,0,0,0.3);*/
@@ -107,14 +107,14 @@ a:hover {
 
 .site-title,
 .site-title:visited {
-    font-size: 24px;
+    font-size: 22px;
     letter-spacing: 0.5px;
     color: #ddd !important;
 }
 
 .site-nav .trigger .page-link {
     letter-spacing: 0.5px;
-    font-size: 20px;
+    font-size: 18px;
     color: #ddd;
 }
 
@@ -128,16 +128,18 @@ a:hover {
     font-size: 26px !important;
     letter-spacing: 0.3px;
 }
+
+
 /*正文*/
 
 .page-content {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .page-content .post-content h1 {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 25px;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
@@ -284,7 +286,7 @@ a:hover {
 .wrapper {
     padding-left: 0;
     padding-right: 0;
-    width: 960px;
+    width: 920px;
 }
 
 .post-content ul {
@@ -323,14 +325,22 @@ a:hover {
 /*底部*/
 
 .site-footer {
-    padding: 15px 0 0;
-    background-color: rgba(0, 0, 0, .7);
     border: none;
+    font-size: 14px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: "Microsoft Yahei", Arial, sans-serif;
 }
 
-.site-footer a {
-    /*color: #2a7ae2;*/
-    color: #ddd !important;
+.site-footer a, .site-footer span{
+    color: #bbb;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.site-footer a:hover {
+    color: #fff;
 }
 
 .site-footer .wrapper {
@@ -338,18 +348,23 @@ a:hover {
     padding-right: 15px;
 }
 
-.site-footer .footer-col{
-    width: 33.3%;
-}
-
-.site-footer .footer-col-2 {
+.site-footer .wrapper .footer-col-wrapper {
     text-align: center;
 }
 
-.site-footer .footer-col-3 .text {
-    text-align: right;
-    color: #ddd !important;
+.site-footer .wrapper .footer-col-wrapper .point{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
 }
+
+
+
 
 .btn-back {
     display: block;
