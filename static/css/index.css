@@ -25,7 +25,7 @@ p{
 }
 
 img{
-    width: 55%;
+    width: 65%;
     margin-bottom: 10px;
 }
 
@@ -123,6 +123,10 @@ a:hover {
     padding-bottom: 5px; 
 }
 
+.post-header {
+    margin-bottom: 40px;
+}
+
 .post-header .post-title{
     margin: 30px 0 10px;
     font-size: 26px !important;
@@ -218,7 +222,7 @@ a:hover {
 
 .page-content .wrapper .home .inner,
 .page-content .wrapper .cat-nav .inner {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     background-color: #f8f8fd;
     border: 1px solid #ddd;
