@@ -1,0 +1,35 @@
+;
+(function($) {
+    var PageSwitch = function(element, options) {
+        this.defaults = {
+            selectors: {
+                sections: '.sections',
+                section: '.section',
+                pages: '.pages',
+                active: '.active'
+            },
+            index: 0,
+            direction: 'vertical',
+            loop: true,
+            keyboard: true
+        };
+
+        this.settings = $.extend(true, {}, this.defaults, options || {});
+        this.$element = element;
+
+        this.init();
+    };
+
+    PageSwitch.prototype = {
+        init: function() {
+            this.$sections = this.$element.find(this.settings.selectors.sections);
+            this.$section = this.$sections.find(this.settings.selectors.section);
+            this.$pages = this.$element.find(this.settings.selectors.pages);
+        }
+    }
+
+
+    $.fb.PageSwitch = function(options) {
+        var pageSwitch = new PageSwitch(this, options);
+    };
+})(jQuery)
