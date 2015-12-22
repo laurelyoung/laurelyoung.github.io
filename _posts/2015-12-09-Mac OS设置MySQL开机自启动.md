@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac系统中设置MySQL开机自启动
+title: Mac OS设置MySQL开机自启动
 tags: [Mac, MySQL, 自启动]
 categories: [Mac, MySQL]
 ---
@@ -9,7 +9,9 @@ categories: [Mac, MySQL]
 
 
 # 1、新建自启动文件
-> sudo touch /Library/LaunchDaemons/com.mysql.mysql.plist
+```
+sudo touch /Library/LaunchDaemons/com.mysql.mysql.plist
+```
 
 # 2、输入启动文件内容
 ``` xml
@@ -31,7 +33,9 @@ categories: [Mac, MySQL]
 ```
 
 # 3、加载启动文件
-> sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysql.plist
+```
+sudo launchctl load -w /Library/LaunchDaemons/com.mysql.mysql.plist
+```
 
 如果出现下图，则表示启动成功。
 

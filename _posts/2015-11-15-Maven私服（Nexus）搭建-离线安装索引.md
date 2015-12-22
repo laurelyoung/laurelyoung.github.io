@@ -38,5 +38,5 @@ categories: [maven, nexus]
 
 #参考资料
 
-1、[http://m.blog.csdn.net/blog/kmter/23564681](http://m.blog.csdn.net/blog/kmter/23564681)
+* [使用nexus搭建maven私服、手动更新索引](http://m.blog.csdn.net/blog/kmter/23564681)
 

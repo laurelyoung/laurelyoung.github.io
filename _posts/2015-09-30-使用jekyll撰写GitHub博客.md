@@ -27,12 +27,13 @@ categories: [github, blog]
 
 代码如下：
 
-``` html
+```
 <ul>
-{% for post in site.posts %}
+{ % for post in site.posts % }
 	<li>
-		<a href="{{ post.url }}">{{ post.title }}</a>
+		<a href="{ { post.url } }">{ { post.title } }</a>
 	</li>
-{% endfor %}
+{ % endfor % }
 </ul>
 ```
+

@@ -7,23 +7,8 @@
 }
 
 body {
-    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
-    /*background: url("/static/images/bg.jpg");*/
-}
-
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure{
-    margin-bottom: 10px;
-}
-
-h1{
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-h2, h3, h4, h5, h6{
-    margin-top: 15px;
+    font-family: Tahoma, Helvetica, "Microsoft Yahei", Arial, sans-serif;
+    color: #2f2f2f;
 }
 
 ul, li{
@@ -35,10 +20,12 @@ p{
     line-height: 1.7em;
     -ms-word-break: break-all;
     word-break: break-all;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
 }
 
 img{
-    width: 55%;
+    width: 65%;
     margin-bottom: 10px;
 }
 
@@ -46,10 +33,9 @@ code {
     font-size: 14px;
     color: #c7254e;
     background-color: #F9F2F4;
-    font-family: Menlo, "Microsoft Yahei", Consolas, Arial;
+    font-family: Monaco, Menlo, "Microsoft Yahei", Consolas, Arial;
     padding: 3px 5px;
     margin: 0 2px;
-    /*border: 1px solid rgba(0,0,0,0.3);*/
 }
 
 pre > code {
@@ -66,25 +52,22 @@ pre{
 
 blockquote {
     color: #2c3f51;
-    font-size: 16px;
+    font-size: 15px;
     background-color: #f2f4f6;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 10px 15px;
-    border-left: 10px solid rgba(102,128,153,0.075);
-    font-style: normal;
+    line-height: 30px;
     letter-spacing: normal;
+    font-style: normal;
+    border-left: 10px solid rgba(102,128,153,0.075);
     font-family: Menlo, "Microsoft Yahei", Consolas, Arial;
 }
 
-blockquote ul{
-    margin-left: 20px;
-}
-
-blockquote li {
+blockquote ul li {
     list-style-type: disc;;
     line-height: 1.75em;
-    margin-left: 10px;
+    margin-left: 25px !important;
     padding-left: 5px;
     margin: 0;
 }
@@ -113,11 +96,6 @@ a:hover {
     margin-right: 2px;
 }
 
-.post-text-count {
-    font-size: 14px;
-    color: #828282;
-    margin-left: 10px;
-}
 
 .site-header {
     background: #222;
@@ -128,48 +106,86 @@ a:hover {
 
 .site-title,
 .site-title:visited {
+    font-size: 22px;
+    letter-spacing: 0.5px;
     color: #ddd !important;
 }
 
-.site-nav .page-link {
+.site-nav .trigger .page-link {
+    letter-spacing: 0.5px;
+    font-size: 18px;
     color: #ddd;
 }
 
 .page-content .wrapper {
-    min-height: 600px;
     position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px; 
 }
 
-.post-title{
+.post-header {
+    margin-bottom: 40px;
+}
+
+.post-header .post-title{
+    margin: 30px 0 10px;
     font-size: 26px !important;
     letter-spacing: 0.3px;
 }
+
+
 /*正文*/
 
 .page-content {
-    padding-bottom: 5px;
+    padding-bottom: 0;
 }
 
-.page-content h1 {
-    font-size: 23px;
-    font-weight: 700;
+.page-content .post-content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
 }
 
-.page-content h2 {
+.page-content .post-content h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.page-content .post-list li a h2 {
     font-size: 20px;
+    font-weight: normal;
     margin-top: 0;
     margin-bottom: -3px;
 }
 
-.page-content .post-link {
+.page-content .post-list li .post-link {
     font-size: 20px;
+    letter-spacing: 0.5px;
+    -ms-word-break: break-all;
+    word-break: break-all;
 }
+
+.page-content .post-list li .post-meta {
+    color: #999;
+}
+
+.page-content .post-list li .post-text-count {
+    color: #999;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/*左侧列表栏*/
 
 .page-content .wrapper .home {
     display: block;
     width: 75%;
     padding-left: 15px;
     padding-right: 15px;
+    float: left;
 }
 
 .page-content .wrapper .home .inner .page-heading,
@@ -195,26 +211,27 @@ a:hover {
 }
 
 
-/*侧边分类栏*/
-
-.cat-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
+/*右侧分类栏*/
+.page-content .wrapper .cat-nav {
+    float: right;
     display: block;
     width: 25%;
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.home .inner,
-.cat-nav .inner {
+.page-content .wrapper .home .inner,
+.page-content .wrapper .cat-nav .inner {
+    margin-top: 10px;
+    margin-bottom: 20px;
     background-color: #f8f8fd;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, .3), 0 0 25px rgba(0, 0, 0, .1) inset;
+    border: 1px solid #ddd;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .15);
+    /*box-shadow: 0px 0px 6px rgba(0, 0, 0, .3), 0 0 20px rgba(0, 0, 0, .1) inset;*/
 }
 
-.cat-nav .inner h2,
-.cat-nav li {
+.page-content .wrapper .cat-nav .inner h2,
+.page-content .wrapper .cat-nav li {
     position: relative;
     display: block;
     width: 100%;
@@ -227,22 +244,23 @@ a:hover {
     transition: all 0.3s;
 }
 
-.cat-nav .inner h2 {
+.page-content .wrapper .cat-nav .inner h2 {
+    margin: 0;
     font-size: 18px;
     font-weight: bold;
 }
 
-.cat-nav li:last-child {
+.page-content .wrapper .cat-nav li:last-child {
     border: 0;
 }
 
-.cat-nav li:hover,
-.cat-nav li.active {
+.page-content .wrapper .cat-nav li:hover,
+.page-content .wrapper .cat-nav li.active {
     color: #669;
     background-color: #f1f1f1;
 }
 
-.cat-nav li .cat-number {
+.page-content .wrapper .cat-nav li .cat-number {
     position: absolute;
     top: 8px;
     right: 15px;
@@ -262,7 +280,7 @@ a:hover {
     transition: all 0.3s;
 }
 
-.cat-nav li:hover .cat-number {
+.page-content .wrapper .cat-nav li:hover .cat-number {
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
@@ -272,8 +290,37 @@ a:hover {
 .wrapper {
     padding-left: 0;
     padding-right: 0;
+    width: 920px;
 }
 
+.post-content {
+    margin-bottom: 5px;
+}
+
+.post-content ul {
+    list-style: none;
+}
+
+.post-content ul li{
+    list-style-type: disc;
+    margin-left: 50px;
+    line-height: 30px;
+
+}
+
+.post-content ul li a {
+    color: #4484c2;
+    text-decoration: underline;
+}
+
+.post-content ul li p {
+    margin-bottom: 0;
+}
+
+.post-content ul li ul li{
+    list-style-type: circle;
+    margin-left: 40px;
+}
 
 /*顶部*/
 
@@ -286,33 +333,45 @@ a:hover {
 /*底部*/
 
 .site-footer {
-    padding: 15px 0 0;
-    background-color: rgba(0, 0, 0, .7);
     border: none;
+    font-size: 14px;
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: "Microsoft Yahei", Arial, sans-serif;
 }
 
-.site-footer a {
-    /*color: #2a7ae2;*/
-    color: #ddd !important;
+.site-footer a, .site-footer span{
+    color: #bbb;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.site-footer a:hover {
+    color: #fff;
 }
 
 .site-footer .wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
-.site-footer .footer-col{
-    width: 33.3%;
-}
-
-.site-footer .footer-col-2 {
+.site-footer .wrapper .footer-col-wrapper {
     text-align: center;
 }
 
-.site-footer .footer-col-3 .text {
-    text-align: right;
-    color: #ddd !important;
+.site-footer .wrapper .footer-col-wrapper .point{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
 }
+
+
+
 
 .btn-back {
     display: block;
@@ -326,22 +385,33 @@ a:hover {
 
 .pre-next-links{
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.pre-next-links ul li{
+    list-style: none;
+    margin-left: 0;
+}
+
+.pre-next-links ul li a {
+    text-decoration: underline;
 }
 
 .pagination {
     border-top: 1px solid #ddd;
     text-align: center;
-    padding: 20px 0;
-    font-size: 18px;
+    padding: 25px 0px;
+    font-size: 15px;
 }
 
 .pagination > span, .pagination > a, .pagination > em {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 3px 10px;
+    border: 1px solid #ccc;
+    padding: 3px 8px;
     cursor: pointer;
-    margin: 0 3px;
     color: #005;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .pagination > span {
@@ -353,4 +423,47 @@ a:hover {
     font-weight: bold;
     color: #d41;
 }
+
+.pagination > a:hover {
+    -webkit-box-shadow: 1px 1px 6px rgba(0,0,0,.3);
+    box-shadow: 1px 1px 6px rgba(0,0,0,.3);
+}
+
+.table {
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.table tr {
+    font-size: 15px;
+}
+
+.table tr:first-child {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.table tr td {
+    border: 1px solid #ccc;
+    padding: 0 8px;
+    line-height: 32px;
+}
+
+.table tr td:first-child {
+    width: 25%;
+} 
+
+
+
+
+
 
