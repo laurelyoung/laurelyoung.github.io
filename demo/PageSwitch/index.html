@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>全屏切换</title>
+    <link rel="stylesheet" href="css/jquery.pageswitch.css" type="text/css">
+    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.pageswitch.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <ul class="sections">
+        <li class="section"><img src="images/1.jpg" alt=""></li>
+        <li class="section"><img src="images/2.jpg" alt=""></li>
+        <li class="section"><img src="images/3.jpg" alt=""></li>
+        <li class="section"><img src="images/4.jpg" alt=""></li>
+        <li class="section"><img src="images/5.jpg" alt=""></li>
+    </ul>
+</body>
+
+<script type="text/javascript">
+    $(function(){
+        $(document.body).PageSwitch({
+            direction: 'horizontal',
+            loop: true
+        });
+    });
+</script>
+</html>
