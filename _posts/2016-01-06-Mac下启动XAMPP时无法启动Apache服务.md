@@ -24,7 +24,7 @@ Mac上自带的Apache服务器已经启动，因此需要将其关闭后再启�
 
 
 ## 3、解决方法
-1、使用命令`sudo apachectl stop`将自带的Apache服务关闭
+1、使用命令`sudo apachectl stop`将自带的Apache服务关闭  
 2、使用命令`sudo /Applications/XAMPP/xamppfiles/xampp start`重新启动XAMPP
 
 之后将会出现下面的提示信息，这就表示XAMPP已经全部启动成功了。
