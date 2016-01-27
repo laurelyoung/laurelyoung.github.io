@@ -137,7 +137,8 @@ a:hover {
 /*正文*/
 
 .page-content {
-    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 0;
 }
 
 .page-content .post-content h1 {
