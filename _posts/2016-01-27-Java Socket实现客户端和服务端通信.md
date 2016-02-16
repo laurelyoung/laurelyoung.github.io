@@ -10,12 +10,13 @@ categories: [Socket, 客户端, 服务端]
 
 
 ## 1.问题描述：
-> 在使用Java语言的`Socket套接字`实现客户端和服务端通信的时候，程序卡死不动（通信阻塞）。
+> 使用Java语言的`Socket套接字`实现客户端和服务端通信时，程序卡死不动（通信阻塞）。
 
 
 ## 2.原因分析：
-在使用Java Socket套接字实现客户端和服务端通信的时候，我们一般会使用`BufferedReader类`和`BufferedWriter类`。
-当使用了BufferedWriter类输出字符串，但没有使用`newLine()`添加换行符和`flush()`方法将缓冲区字符输出的时候，此时再调用`BufferedReader的readLine()`方法读取一行字符串，就会出现程序卡死不动（阻塞）的想象。
+在使用Java Socket套接字实现客户端和服务端通信时，我们一般会用到两个Java类:`BufferedReader`(字符读取流)和`BufferedWriter`(字符输出流)。
+当使用了BufferedWriter类输出字符串，但没有使用`newLine()`方法添加换行符和`flush()`方法将缓冲区字符输出的时候，此时再调用`BufferedReader的readLine()`方法读取一行字符串，
+由于读取不到一行的结束标记(回车换行符)，程序会一直等待直到读取到结束标记，因此呈现出程序卡死不动（阻塞）的现象。
 
 
 ## 3.解决方法
