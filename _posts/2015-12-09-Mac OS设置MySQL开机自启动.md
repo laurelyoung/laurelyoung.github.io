@@ -14,7 +14,7 @@ sudo touch /Library/LaunchDaemons/com.mysql.mysql.plist
 ```
 
 # 2、输入启动文件内容
-``` xml
+{% highlight xml %}
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -30,7 +30,7 @@ sudo touch /Library/LaunchDaemons/com.mysql.mysql.plist
         </array>
     </dict>
 </plist>
-```
+{% endhighlight %}
 
 # 3、加载启动文件
 ```

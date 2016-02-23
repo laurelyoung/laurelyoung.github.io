@@ -37,7 +37,7 @@ sudo python setup.py install
 
 ```
 sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
-````
+```
 
 
 ## 参考资料

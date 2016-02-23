@@ -27,7 +27,7 @@ categories: [Socket, 客户端, 服务端]
 
 ### (1)服务端代码
 
-``` java
+{% highlight java %}
 package com.laurel.mydemo.biz.socket;
 
 import java.io.*;
@@ -96,11 +96,11 @@ public class SimpleServer {
         }
     }
 }
-```
+{% endhighlight %}
 
 ### (2)客户端代码
 
-``` java
+{% highlight java %}
 package com.laurel.mydemo.biz.socket;
 
 import java.io.*;
@@ -164,7 +164,7 @@ public class SimpleClient {
         }
     }
 }
-```
+{% endhighlight %}
 
 ### (3)实现效果
 

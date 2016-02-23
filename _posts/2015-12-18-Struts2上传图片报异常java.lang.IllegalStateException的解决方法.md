@@ -10,7 +10,7 @@ categories: [Struts2]
 
 
 ## 1、异常详请
-```
+{% highlight java %}
 java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
 	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:450)
 	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:119)
@@ -27,7 +27,7 @@ java.lang.IllegalStateException: Cannot call sendError() after the response has 
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
 	...
-```
+{% endhighlight %}
 
 
 ## 2、原因分析
@@ -37,7 +37,7 @@ java.lang.IllegalStateException: Cannot call sendError() after the response has 
 
 本人在实现图片上传的功能中，需要向前端返回了图片的URL、高度和宽度等字段，这些字段是通过response的输出流以纯文本的形式返回的。具体的代码如下：
 
-``` java
+{% highlight java %}
 public String execute() throws Exception {
 	// 处理图片，获取宽度和高度
 	// 上传图片，获取图片URL
@@ -65,7 +65,7 @@ public String execute() throws Exception {
 
 	return SUCCESS;
 }
-```
+{% endhighlight %}
 
 代码中，`ServletActionContext.getResponse().isCommitted()`用于查看response是否已经提交。启动程序运行后，可以看到控制台打印出了`true`，表示程序运行到此处response已经提交。此时，`return SUCCESS`，就会发生`IllegalStateException`异常。 
 
@@ -74,10 +74,10 @@ public String execute() throws Exception {
 
 在Struts2的Action中，将`return SUCCESS;`替换为`return null;`。
 
-``` java
+{% highlight java %}
 //return SUCCESS;
 return null;
-```
+{% endhighlight %}
 
 
 

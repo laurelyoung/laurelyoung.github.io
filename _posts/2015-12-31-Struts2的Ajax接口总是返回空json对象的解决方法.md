@@ -18,24 +18,25 @@ categories: [Struts2]
 
 产生问题代码如下：
 
-``` java
-protected int code:
+{% highlight java %}
+protected int code;
 protected Map<String, Object> msg = new HashMap<String, Object>();
 protected int getCode(){return code;}
 protected Map<String, Object> getMsg(){return msg;}
-```
+{% endhighlight %}
+
 
 ## 3、解决方法
 通过以上分析，我们只需要将访问权限控制符`从protected改成public`，就可以解决这个问题。
 
 具体代码如下：
 
-``` java
-public int code:
+{% highlight java %}
+public int code;
 public Map<String, Object> msg = new HashMap<String, Object>();
 public int getCode(){return code;}
 public Map<String, Object> getMsg(){return msg;}
-```
+{% endhighlight %}
 
 
 
