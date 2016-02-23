@@ -17,11 +17,11 @@ IntelliJ IDEA 15和WebStorm 11内置JDK 1.8的版本，但是这个版本存在�
 
 
 # 3、解决办法
-第一步，下载并安装JDK8u45，在终端输入`java -version`验证是否安装成功；
-第二步，重新启动IDEA或WebStorm；
+第一步，下载并安装JDK8u45，在终端输入`java -version`验证是否安装成功
+第二步，重新启动IDEA或WebStorm
 第三步，在IDEA或WebStorm中按下快捷键`CMD+Shift+A`（或者`双击Shift`），在弹出框中输入`Switch IDE boot JDK`，
-之后在下拉框中选择刚刚安装的JDK8u45替代内置的JDK；
-第四步，再次重启IDEA或WebStorm。
+之后在下拉框中选择刚刚安装的JDK8u45替代内置的JDK
+第四步，再次重启IDEA或WebStorm
 
 
 
