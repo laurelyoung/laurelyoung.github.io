@@ -26,6 +26,10 @@ permalink: /about/
 		<td>操作</td>
 	</tr>
 	<tr>
+    	<td>2016-02-23</td>
+    	<td>更换markdown引擎（kramdown替代redcarpet）</td>
+   	</tr>
+	<tr>
 		<td>2015-12-13</td>
 		<td>修改样式（正文宽度、页脚布置）</td>
 	</tr>
