@@ -14,12 +14,12 @@ permalink: /about/
 	+ 后端：Java、PHP
 	+ 移动端：Android
 
-#博客初衷
+# 博客初衷
 * 记录软件的搭建过程和使用方法，方便日后查阅
 * 记录日常工作与遇到的技术问题，与大家进行探讨
 
 
-#博客日志
+# 博客日志
 <table class="table">
 	<tr>
 		<td>时间</td>

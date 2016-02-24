@@ -26,7 +26,8 @@ categories: [Tomcat, IntelliJ IDEA]
 
 重启Tomcat后，IntelliJ IDEA的控制台中就可以正常的输出中文日志了。
 
-#参考资料
+
+# 参考资料
 * [Tomcat7在Idea12的控制台中输出日志时中文乱码的解决方法](http://my.oschina.net/oymyisme/blog/129109)
 
 
