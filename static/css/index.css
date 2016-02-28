@@ -21,8 +21,8 @@ p{
     -ms-word-break: break-all;
     word-break: break-all;
     margin-bottom: 10px;
-    letter-spacing: 0.5px;
     text-align: justify;
+    font-family: Lucida Grande, Hiragino Sans GB, "Microsoft Yahei", Arial, sans-serif;
 }
 
 img{
