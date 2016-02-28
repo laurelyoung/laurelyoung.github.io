@@ -33,7 +33,7 @@ npm install -g cordova
 
 ## 1) 创建cordova项目
 {% highlight xml %}
-npm create hello
+cordova create hello
 {% endhighlight %}
 
 ## 2) 添加android平台
