@@ -28,6 +28,15 @@ p{
 img{
     width: 65%;
     margin-bottom: 10px;
+    min-width: 400px;
+}
+
+.img-big {
+    width: 100%;
+}
+
+.img-small {
+    width: 40%;
 }
 
 code {
