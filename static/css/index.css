@@ -43,7 +43,7 @@ code {
     font-size: 14px;
     color: #c7254e;
     background-color: #F9F2F4;
-    font-family: Monaco, Menlo, "Microsoft Yahei", Consolas, Arial;
+    font-family: Monaco, Menlo, "Microsoft Yahei", Consolas, Arial, sans-serif;
     padding: 3px 5px;
     margin: 0 2px;
 }
@@ -71,15 +71,19 @@ blockquote {
     letter-spacing: normal;
     font-style: normal;
     border-left: 10px solid rgba(102,128,153,0.075);
-    font-family: Menlo, "Microsoft Yahei", Consolas, Arial;
+    font-family: Menlo, "Microsoft Yahei", Consolas, Arial, sans-serif;
+}
+
+blockquote p {
+    font-family: Menlo, "Microsoft Yahei", Consolas, Arial, sans-serif;
 }
 
 blockquote ul li {
     list-style-type: disc;;
     line-height: 1.75em;
+    margin: 0;
     margin-left: 25px !important;
     padding-left: 5px;
-    margin: 0;
 }
 blockquote li > ul li{
     list-style-type: circle;
