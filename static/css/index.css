@@ -55,7 +55,7 @@ pre > code {
 }
 
 pre{
-    background-color: #f5f5f5;
+    background-color: #f5f5f5 !important;
     border: 1px solid #eef;
     margin: 6px 0;
 }
@@ -173,6 +173,8 @@ a:hover {
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .page-content .post-list li a h2 {
@@ -325,7 +327,8 @@ a:hover {
     list-style-type: disc;
     margin-left: 50px;
     line-height: 30px;
-
+    font-family: Lucida Grande, Hiragino Sans GB, "Microsoft Yahei", Arial, sans-serif;
+    color: #2f2f2f;
 }
 
 .post-content ul li a {
