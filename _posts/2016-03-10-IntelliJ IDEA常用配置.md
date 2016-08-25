@@ -27,6 +27,13 @@ categories: [IntelliJ IDEA]
 </div>
 
 
+# 2、批量导入 package
+
+<div style="text-align: center;">
+    <image src="{{ post.url }}/static/images/intellij/batch_import_packages.png"></image>
+</div>
+
+
 
 
 
